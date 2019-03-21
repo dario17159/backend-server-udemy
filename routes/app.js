@@ -2,9 +2,9 @@ var express = require('express');
 
 var app = express();
 
-app.get('/', (request, response, next) => {
+app.get('/', (req, res, next) => {
 
-    response.status(200).json({
+    res.status(200).json({
         ok: true,
         mensaje: 'Peticion realizada correctamente'
     });
